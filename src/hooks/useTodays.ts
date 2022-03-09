@@ -118,8 +118,10 @@ function getCountry(dayString: string) {
       }
     }
 
-    if (areas[pickedCountry.code] < smallCountryLimit) {
-      smallCountryCooldown = 7;
+    if (smallCountryLimit > 0) {
+      if (areas[pickedCountry.code] < smallCountryLimit) {
+        smallCountryCooldown = 7;
+      }
     }
 
     lastPickDates[pickedCountry.code] = pickingDate;
