@@ -3,8 +3,8 @@ import React, { useState } from "react";
 import Autosuggest from "react-autosuggest";
 import { useTranslation } from "react-i18next";
 import { Guess } from "../domain/guess";
-import { getCountryName, sanitizeCountryName } from "../domain/countries/shape";
-import { countries } from "../domain/countries/position";
+import { getCountryName, sanitizeCountryName } from "../domain/us-states/shape";
+import { countries } from "../domain/us-states/position";
 
 interface CountryInputProps {
   inputRef: React.RefObject<HTMLInputElement>;

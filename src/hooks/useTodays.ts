@@ -6,8 +6,8 @@ import {
   countriesWithImage,
   Country,
   smallCountryLimit,
-} from "../domain/countries/shape";
-import { areas } from "../domain/countries/area";
+} from "../domain/us-states/shape";
+import { areas } from "../domain/us-states/area";
 import { Guess, loadAllGuesses, saveGuesses } from "../domain/guess";
 
 const forcedCountries: Record<string, string> = {

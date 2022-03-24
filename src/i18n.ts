@@ -5,14 +5,14 @@ import { initReactI18next } from "react-i18next";
 export const translations = {
   en: {
     translation: {
-      placeholder: "Country, territory...",
+      placeholder: "State...",
       guess: "Guess",
       share: "Share",
       showOnGoogleMaps: "👀 on Google Maps",
       showOnWikipedia: "📚 on Wikipedia",
       welldone: "Well done!",
-      unknownCountry: "Unknown country!",
-      countryDuplication: "Country already guessed!",
+      unknownCountry: "Unknown state!",
+      countryDuplication: "State already guessed!",
       copy: "Copied results to clipboard",
       showCountry: "🗺️ Show map!",
       cancelRotation: "🌀 Cancel rotation",
@@ -23,8 +23,8 @@ export const translations = {
         language: "Language",
         difficultyModifiers: "Difficulty modifiers",
         startingNextDay: "Starting the next day!",
-        noImageMode: "Hide country image for more of a challenge.",
-        rotationMode: "Randomly rotate country image.",
+        noImageMode: "Hide state image for more of a challenge.",
+        rotationMode: "Randomly rotate state image.",
         updateNotificationDisabled: "Disable update notifications.",
       },
       stats: {
@@ -37,9 +37,9 @@ export const translations = {
         guessDistribution: "Guess distribution:",
       },
       install: {
-        title: "Worldle",
+        title: "Statele",
         descritpionTitle: "App Install:",
-        description: "Add Worldle to Home Screen to play it easily!",
+        description: "Add Statele to Home Screen to play it easily!",
         instructionTitle: "Instructions:",
         instructionActionOk: "OK",
         instructionActionCancel: "Cancel",
@@ -101,10 +101,10 @@ export const translations = {
         guessDistribution: "Répartitions des victoires:",
       },
       install: {
-        title: "Worldle",
+        title: "Statele",
         descritpionTitle: "Installer l'app:",
         description:
-          "Ajouter Worldle sur l'écran d'accueil pour le retrouver plus facilement !",
+          "Ajouter Statele sur l'écran d'accueil pour le retrouver plus facilement !",
         instructionTitle: "Instructions :",
         instructionActionOk: "OK",
         instructionActionCancel: "Annuler",

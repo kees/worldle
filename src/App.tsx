@@ -92,7 +92,7 @@ export default function App() {
               <Twemoji text="❓" />
             </button>
             <h1 className="text-4xl font-bold uppercase tracking-wide text-center my-1 flex-auto">
-              Wor<span className="text-green-600">l</span>dle
+              <span className="text-green-600">State</span>le
             </h1>
             <button
               className="ml-3 text-xl"
@@ -128,13 +128,13 @@ export default function App() {
             ) : (
               <a
                 className="underline pl-1"
-                href="https://www.ko-fi.com/teuteuf"
+                href="https://worldle.teuteuf.fr"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <div className="w-max">
                   <Twemoji
-                    text={t("buyMeACoffee")}
+                    text="Try worldle"
                     options={{ className: "inline-block" }}
                   />
                 </div>

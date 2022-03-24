@@ -7,7 +7,7 @@ import React, {
   useState,
 } from "react";
 import { toast } from "react-toastify";
-import { getCountryName, sanitizeCountryName } from "../domain/countries/shape";
+import { getCountryName, sanitizeCountryName } from "../domain/us-states/shape";
 import { CountryInput } from "./CountryInput";
 import * as geolib from "geolib";
 import { Share } from "./Share";
@@ -17,7 +17,7 @@ import { SettingsData } from "../hooks/useSettings";
 import { useMode } from "../hooks/useMode";
 import { getDayString, useTodays } from "../hooks/useTodays";
 import { Twemoji } from "@teuteuf/react-emoji-render";
-import { countries } from "../domain/countries/position";
+import { countries } from "../domain/us-states/position";
 import { useNewsNotifications } from "../hooks/useNewsNotifications";
 
 const MAX_TRY_COUNT = 6;
@@ -162,8 +162,8 @@ export function Game({ settingsData, updateSettings }: GameProps) {
           className={`pointer-events-none max-h-52 m-auto transition-transform duration-700 ease-in dark:invert ${
             hideImageMode && !gameEnded ? "h-0" : "h-full"
           }`}
-          alt="country to guess"
-          src={`images/countries/${country?.code.toLowerCase()}/vector.svg`}
+          alt="state to guess"
+          src={`images/us-states/${country?.code.toLowerCase()}/vector.svg`}
           style={
             rotationMode && !gameEnded
               ? {
