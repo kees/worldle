@@ -144,5 +144,5 @@ function isARepeat(
     "day"
   ).days;
 
-  return daysSinceLastPick < 100;
+  return daysSinceLastPick < 25;
 }

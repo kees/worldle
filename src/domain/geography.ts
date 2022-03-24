@@ -1,6 +1,9 @@
 import { Guess } from "./guess";
 
-const MAX_DISTANCE_ON_EARTH = 20_000_000;
+// const MAX_DISTANCE = 20_000_000;
+// It might be nice to generate this based on the SVG dataset.
+// https://en.wikipedia.org/wiki/List_of_extreme_points_of_the_United_States
+const MAX_DISTANCE = 4_669_000;
 
 export type Direction =
   | "S"
@@ -44,8 +47,8 @@ export function getDirectionEmoji(guess: Guess) {
 }
 
 export function computeProximityPercent(distance: number): number {
-  const proximity = Math.max(MAX_DISTANCE_ON_EARTH - distance, 0);
-  return Math.floor((proximity / MAX_DISTANCE_ON_EARTH) * 100);
+  const proximity = Math.max(MAX_DISTANCE - distance, 0);
+  return Math.floor((proximity / MAX_DISTANCE) * 100);
 }
 
 export function generateSquareCharacters(
